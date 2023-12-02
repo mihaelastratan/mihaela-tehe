@@ -1,0 +1,134 @@
+@@ -1,126 +1,128 @@
+body {
+    background-color: SeaShell;
+    color: black;
+    font-family: 'Century Gothic', sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+.nav-bar {
+    background-color: Deepblue;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.nav-bar a {
+    float: left;
+    display: block;
+    color: BlanchedAlmond;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav-bar a:hover {
+    background-color: Blue;
+    color: MistyRose;
+}
+/* Paint me! styles */
+.paint::before {
+    content: "uhhh";
+    color: blue;
+    font-weight: bold;
+}
+.paint:hover::before {
+    content: "hovered? why?";
+    color: LightPink; 
+}
+.paint::after {
+    content: "okay";
+    color: HotBlue;
+    font-weight: bold;
+}
+.paint {
+    background-color: white;
+    color: DeepPink;
+    padding: 5px;
+}
+/* Visibility property */
+.visible {
+    visibility: visible;
+}
+.hidden {
+    visibility: hidden;
+}
+/* Opacity */
+.op_1 {
+    opacity: 1;
+}
+.op_0 {
+    opacity: 0;
+}
+.op_05 {
+    opacity: 0.5;
+}
+/* Display */
+.none {
+    display: none;
+    font-weight: bold;
+}
+.inline {
+    display: inline;
+    font-weight: bold;
+}
+.block {
+    display: block;
+    font-weight: bold;
+}
+h3 {
+    background-color: pink;
+    text-align: center;
+    color: white;
+}
+.container {
+    width: 100%;
+}
+.banner {
+    background-color: rgb(255, 20, 147);
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.image {
+    transition: width 5s; /* Transition for width property */
+    cursor: pointer; 
+}
+.center {
+    text-align: center;
+}
+.image {
+    filter: grayscale(100%);
+    filter: brightness(0.5);
+}
+/* style.css */
+
+@keyframes image {
+/* style.css */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+@@ -130,6 +132,23 @@ h3 {
+}
+
+.image {
+    animation: fadeIn 1s ease-in-out;
+    transition: width 5s; /* Transition for width property */
+    cursor: pointer;
+}
+
+.image:hover {
+    width: 800px; /* Change the width on hover */
+}
+
+.center {
+    text-align: center;
+}
+
+.image {
+    filter: grayscale(100%);
+    filter: brightness(0.5);
+}
+
+.image-animated {
+    animation: fadeIn 1s ease-in-out;
+}
