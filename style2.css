@@ -1,0 +1,112 @@
+body {
+    background-color: LightSkyBlue;
+    color: black;
+    font-family: 'Century Gothic', sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+
+.nav-bar {
+    background-color: DarkSlateGray;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.nav-bar a {
+    float: left;
+    display: block;
+    color: LightCyan;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    background-color: Teal;
+    color: MistyRose;
+}
+
+.paint::before {
+    content: "uhhh";
+    color: MediumPurple;
+    font-weight: bold;
+}
+
+.paint:hover::before {
+    content: "hovered? why?";
+    color: Orchid;
+}
+
+.paint::after {
+    content: "okay";
+    color: DarkOrchid;
+    font-weight: bold;
+}
+
+.paint {
+    background-color: AliceBlue;
+    color: DarkMagenta;
+    padding: 5px;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.op_1 {
+    opacity: 1;
+}
+
+.op_0 {
+    opacity: 0;
+}
+
+.op_05 {
+    opacity: 0.5;
+}
+
+.none {
+    display: none;
+    font-weight: bold;
+}
+
+.inline {
+    display: inline;
+    font-weight: bold;
+}
+
+.block {
+    display: block;
+    font-weight: bold;
+}
+
+h3 {
+    background-color: MediumAquamarine;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    width: 100%;
+}
+
+.banner {
+    background-color: MediumVioletRed;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.image {
+    transition: width 5s;
+    cursor: pointer;
+    filter: grayscale(100%) brightness(0.5);
+}
+
+.image-animated {
+    animation: fadeIn 1s ease-in-out;
+}
