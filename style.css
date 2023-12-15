@@ -1,112 +1,156 @@
 body {
-    background-color: LightSkyBlue;
-    color: black;
-    font-family: 'Century Gothic', sans-serif;
-    margin: 20px;
-    padding: 20px;
+  background-color: lightgrey;
 }
 
-.nav-bar {
-    background-color: DarkSlateGray;
-    overflow: hidden;
-    margin-bottom: 20px;
+h1 {
+  text-align: center;
 }
 
-.nav-bar a {
-    float: left;
-    display: block;
-    color: LightCyan;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.head1 {
+  background-color: lightblue;
 }
 
-.nav-bar a:hover {
-    background-color: Teal;
-    color: MistyRose;
+#head2 {
+  background-color: darkred;
+  color: white;
 }
 
-.paint::before {
-    content: "uhhh";
-    color: MediumPurple;
-    font-weight: bold;
+/* Common styles for div */
+div {
+  background-color: antiquewhite;
+  padding: 20px;
 }
 
-.paint:hover::before {
-    content: "hovered? why?";
-    color: Orchid;
+/* Styles only the .nav-bar inside #unique-section */
+#unique-section .nav-bar {
+  background-color: beige;
+  padding: 20px;
 }
 
-.paint::after {
-    content: "okay";
-    color: DarkOrchid;
-    font-weight: bold;
+/* Styles h1 element immediately following .nav-bar inside #unique-section */
+#unique-section .nav-bar + h1 {
+  background-color: darkblue;
+  color: white;
 }
 
-.paint {
-    background-color: AliceBlue;
-    color: DarkMagenta;
-    padding: 5px;
+/* Selects any anchor tag that immediately follows another anchor tag within .nav-bar */
+#unique-section .nav-bar > a + a {
+  background-color: darkred;
 }
 
+/* Styles anchor tags within .nav-bar inside #unique-section */
+#unique-section .nav-bar a {
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+}
+
+/* Styles only direct children of .nav-bar inside #unique-section */
+#unique-section .nav-bar > a {
+  font-weight: bold;
+}
+
+/* Styles h1 elements that are siblings of .nav-bar inside #unique-section */
+#unique-section .nav-bar + h1 {
+  font-style: italic;
+  text-align: center;
+}
+
+/* Visibility property */
 .visible {
-    visibility: visible;
+  visibility: visible;
 }
 
 .hidden {
-    visibility: hidden;
+  visibility: hidden;
 }
 
+/* Opacity */
 .op_1 {
-    opacity: 1;
+  opacity: 1;
 }
 
 .op_0 {
-    opacity: 0;
+  opacity: 0;
 }
 
 .op_05 {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
+/* Display */
 .none {
-    display: none;
-    font-weight: bold;
+  display: none;
+  font-weight: bold;
 }
 
 .inline {
-    display: inline;
-    font-weight: bold;
+  display: inline;
+  font-weight: bold;
 }
 
 .block {
-    display: block;
-    font-weight: bold;
+  display: block;
+  font-weight: bold;
 }
 
 h3 {
-    background-color: MediumAquamarine;
-    text-align: center;
-    color: white;
+  background-color: aquamarine;
+  text-align: center;
 }
 
-.container {
-    width: 100%;
+/* Keyframe Animation */
+@keyframes my-animation {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: lightpurple;
+  }
 }
 
-.banner {
-    background-color: MediumVioletRed;
-    color: white;
-    padding: 10px;
-    margin-bottom: 20px;
+body {
+  animation: my-animation 2s;
 }
 
-.image {
-    transition: width 5s;
-    cursor: pointer;
-    filter: grayscale(100%) brightness(0.5);
+/* Image styling specifically for the image inside the .banner div */
+.index-page .banner img {
+  width: 100%;
+  filter: grayscale(100%) invert(100%);
 }
 
-.image-animated {
-    animation: fadeIn 1s ease-in-out;
+/* Reset for margin and padding within the specific structure */
+.index-page .nav,
+.index-page .banner,
+.index-page .content,
+.index-page .footer {
+  padding: 0;
+  margin: 0;
+}
+
+/* Navigation styling */
+.index-page .nav {
+  background-color: rgb(253, 185, 185);
+  height: 20px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Banner styling */
+.index-page .banner {
+  background-color: aqua;
+  height: 200px;
+}
+
+/* Content styling */
+.content {
+  background-color: rgb(246, 213, 213);
+  height: 400px;
+}
+
+/* Footer styling */
+.footer {
+  background-color: rgb(37, 27, 27);
+  height: 100px;
 }
